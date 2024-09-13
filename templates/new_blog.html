@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Create New Blog</h1>
+    <form method="POST" enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+        <div class="mb-3">
+            {{ form.title.label }}<br>
+            {{ form.title(class="form-control") }}
+        </div>
+        <div class="mb-3">
+            {{ form.content.label }}<br>
+            {{ form.content(class="form-control") }}
+        </div>
+        <div class="mb-3">
+            {{ form.image.label }}<br>
+            {{ form.image(class="form-control") }}
+        </div>
+        <div class="mb-3">
+            {{ form.video.label }}<br>
+            {{ form.video(class="form-control") }}
+        </div>
+        <div class="mb-3">
+            {{ form.text_color.label }}<br>
+            {{ form.text_color(class="form-control") }}
+        </div>
+        <div class="mb-3">
+            {{ form.background_color.label }}<br>
+            {{ form.background_color(class="form-control") }}
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+{% endblock %}

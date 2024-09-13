@@ -1,0 +1,12 @@
+body {
+    padding-top: 20px;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 960px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
